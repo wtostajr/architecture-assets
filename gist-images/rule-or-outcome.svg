@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">Rule or Outcome</title>
+  <desc id="desc">Underwriting owns risk rules and produces a business outcome, RiskAccepted, consumed independently by Policy Servicing, Document Management, and Analytics.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#17283D"/>
+    </marker>
+    <style>
+      .bg { fill: #FAF9F6; }
+      .box { fill: #FFFFFF; stroke: #17283D; stroke-width: 2; }
+      .line { fill: none; stroke: #17283D; stroke-width: 2; }
+      .arrow { fill: none; stroke: #17283D; stroke-width: 2; marker-end: url(#arrow); }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #17283D; text-anchor: middle; }
+      .body { font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 400; fill: #405066; text-anchor: middle; }
+      .event { font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #17283D; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="850"/>
+
+  <!-- Underwriting -->
+  <rect class="box" x="325" y="55" width="550" height="180" rx="18"/>
+  <text class="title" x="600" y="105">Underwriting</text>
+  <text class="body" x="600" y="155">Risk rules • Models • Data</text>
+  <text class="body" x="600" y="195">Makes risk decision</text>
+
+  <!-- Underwriting to outcome -->
+  <line class="line" x1="600" y1="235" x2="600" y2="280"/>
+  <rect class="bg" x="520" y="263" width="160" height="34"/>
+  <text class="event" x="600" y="287">RiskAccepted</text>
+  <line class="arrow" x1="600" y1="300" x2="600" y2="335"/>
+
+  <!-- Business Outcome -->
+  <rect class="box" x="390" y="335" width="420" height="165" rx="18"/>
+  <text class="title" x="600" y="385">Business Outcome</text>
+  <text class="body" x="600" y="430">Underwriting decision</text>
+  <text class="body" x="600" y="465">as a business event</text>
+
+  <!-- Branch -->
+  <line class="line" x1="600" y1="500" x2="600" y2="565"/>
+  <line class="line" x1="190" y1="565" x2="1010" y2="565"/>
+  <line class="arrow" x1="190" y1="565" x2="190" y2="615"/>
+  <line class="arrow" x1="600" y1="565" x2="600" y2="615"/>
+  <line class="arrow" x1="1010" y1="565" x2="1010" y2="615"/>
+
+  <!-- Policy Servicing -->
+  <rect class="box" x="45" y="615" width="290" height="175" rx="18"/>
+  <text class="title" x="190" y="665">Policy Servicing</text>
+  <text class="body" x="190" y="715">Consumes decision</text>
+  <text class="body" x="190" y="750">Continues policy lifecycle</text>
+
+  <!-- Document Management -->
+  <rect class="box" x="455" y="615" width="290" height="175" rx="18"/>
+  <text class="title" x="600" y="655">
+    <tspan x="600" dy="0">Document</tspan>
+    <tspan x="600" dy="32">Management</tspan>
+  </text>
+  <text class="body" x="600" y="730">Consumes decision</text>
+  <text class="body" x="600" y="765">Generates documents</text>
+
+  <!-- Analytics -->
+  <rect class="box" x="865" y="615" width="290" height="175" rx="18"/>
+  <text class="title" x="1010" y="665">Analytics</text>
+  <text class="body" x="1010" y="715">Consumes decision</text>
+  <text class="body" x="1010" y="750">Updates models and reports</text>
+</svg>
