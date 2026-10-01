@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Choreography or Orchestration?</title>
+  <desc id="desc">A side-by-side comparison of choreography, where autonomous contexts react to a business event, and orchestration, where a process coordinator directs an explicit sequence.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#17283D"/>
+    </marker>
+    <style>
+      .bg { fill: #FAF9F6; }
+      .box { fill: #FFFFFF; stroke: #17283D; stroke-width: 2; }
+      .line { fill: none; stroke: #17283D; stroke-width: 2; }
+      .arrow { fill: none; stroke: #17283D; stroke-width: 2; marker-end: url(#arrow); }
+      .divider { stroke: #C8CDD3; stroke-width: 1.5; stroke-dasharray: 7 9; }
+      .heading { font-family: Inter, Arial, sans-serif; font-size: 30px; font-weight: 700; fill: #17283D; text-anchor: middle; }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #17283D; text-anchor: middle; }
+      .body { font-family: Inter, Arial, sans-serif; font-size: 18px; font-weight: 400; fill: #405066; text-anchor: middle; }
+      .event { font-family: Inter, Arial, sans-serif; font-size: 19px; font-weight: 600; fill: #17283D; text-anchor: middle; }
+      .caption { font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #17283D; text-anchor: middle; }
+      .caption2 { font-family: Inter, Arial, sans-serif; font-size: 18px; font-weight: 400; fill: #405066; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="860"/>
+  <line class="divider" x1="700" y1="60" x2="700" y2="800"/>
+
+  <!-- CHOREOGRAPHY -->
+  <text class="heading" x="350" y="75">Choreography</text>
+
+  <rect class="box" x="205" y="125" width="290" height="105" rx="18"/>
+  <text class="title" x="350" y="170">PolicyIssued</text>
+  <text class="body" x="350" y="205">Business event</text>
+
+  <!-- Choreography branch -->
+  <line class="line" x1="350" y1="230" x2="350" y2="290"/>
+  <line class="line" x1="115" y1="290" x2="585" y2="290"/>
+  <line class="arrow" x1="115" y1="290" x2="115" y2="345"/>
+  <line class="arrow" x1="350" y1="290" x2="350" y2="345"/>
+  <line class="arrow" x1="585" y1="290" x2="585" y2="345"/>
+
+  <rect class="box" x="25" y="345" width="180" height="145" rx="18"/>
+  <text class="title" x="115" y="390">Premium</text>
+  <text class="title" x="115" y="420">Management</text>
+  <text class="body" x="115" y="462">Establishes premium</text>
+
+  <rect class="box" x="260" y="345" width="180" height="145" rx="18"/>
+  <text class="title" x="350" y="390">Document</text>
+  <text class="title" x="350" y="420">Management</text>
+  <text class="body" x="350" y="462">Generates documents</text>
+
+  <rect class="box" x="495" y="345" width="180" height="145" rx="18"/>
+  <text class="title" x="585" y="390">Commission</text>
+  <text class="title" x="585" y="420">Management</text>
+  <text class="body" x="585" y="462">Calculates commission</text>
+
+  <text class="caption" x="350" y="590">Business fact drives autonomous behavior</text>
+  <text class="caption2" x="350" y="630">Each context decides independently how to react.</text>
+  <text class="caption2" x="350" y="660">The producer does not coordinate the consumers.</text>
+
+  <!-- ORCHESTRATION -->
+  <text class="heading" x="1050" y="75">Orchestration</text>
+
+  <rect class="box" x="880" y="125" width="340" height="105" rx="18"/>
+  <text class="title" x="1050" y="170">Process Coordinator</text>
+  <text class="body" x="1050" y="205">Owns process progression</text>
+
+  <!-- Explicit sequence -->
+  <line class="arrow" x1="1050" y1="230" x2="1050" y2="285"/>
+
+  <rect class="box" x="895" y="285" width="310" height="90" rx="18"/>
+  <text class="title" x="1050" y="325">Validate Request</text>
+  <text class="body" x="1050" y="355">Step 1</text>
+
+  <line class="arrow" x1="1050" y1="375" x2="1050" y2="420"/>
+
+  <rect class="box" x="895" y="420" width="310" height="90" rx="18"/>
+  <text class="title" x="1050" y="460">Calculate Refund</text>
+  <text class="body" x="1050" y="490">Step 2</text>
+
+  <line class="arrow" x1="1050" y1="510" x2="1050" y2="555"/>
+
+  <rect class="box" x="895" y="555" width="310" height="90" rx="18"/>
+  <text class="title" x="1050" y="595">Execute Payment</text>
+  <text class="body" x="1050" y="625">Step 3</text>
+
+  <line class="arrow" x1="1050" y1="645" x2="1050" y2="690"/>
+
+  <rect class="box" x="895" y="690" width="310" height="90" rx="18"/>
+  <text class="title" x="1050" y="730">Cancel Policy</text>
+  <text class="body" x="1050" y="760">Step 4</text>
+
+  <text class="caption" x="1050" y="820">Process owner drives coordinated behavior</text>
+</svg>
