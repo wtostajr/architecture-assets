@@ -15,4 +15,7 @@ The assets in this repository accompany architecture notes and technical discuss
 
 ---
 
-*Architecture should make complexity understandable, ownership explicit, and change easier.*
+> Architecture should make complexity understandable, ownership explicit, and change easier.
+
+#### Walter Tosta
+*Systems engineer at heart. Building at the intersection of technology, AI & business.*
