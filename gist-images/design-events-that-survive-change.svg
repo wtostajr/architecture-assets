@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title description">
+  <title id="title">Design Events That Survive Change</title>
+  <desc id="description">Policy Servicing can change its workflows, states, aggregates, and implementation while publishing PolicyIssued as a stable business fact. Premium Management, Document Management, and Analytics independently consume this contract.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#253342" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; text-anchor: middle; fill: #253342; }
+      .box { fill: #ffffff; stroke: #253342; stroke-width: 1.7; }
+      .connector { fill: none; stroke: #253342; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .heading { font-size: 30px; font-weight: 600; }
+      .subtitle { font-size: 22px; fill: #56616b; }
+      .consumer { font-size: 25px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="860" fill="#f7f6f2"/>
+
+  <!-- Producer: internal implementation is free to evolve. -->
+  <rect class="box" x="330" y="70" width="740" height="196" rx="18"/>
+  <text class="heading" x="700" y="126">Policy Servicing</text>
+  <text class="subtitle" x="700" y="169">Internal model can change</text>
+  <text x="700" y="221" font-size="21">Workflows • States • Aggregates • Implementation</text>
+
+  <path class="connector" d="M 700 266 V 350"/>
+
+  <!-- Integration event: a stable business contract. -->
+  <rect class="box" x="455" y="350" width="490" height="156" rx="18" style="stroke-width:2.3"/>
+  <text x="700" y="414" font-size="35" font-weight="600">PolicyIssued</text>
+  <text class="subtitle" x="700" y="457">Stable business fact</text>
+
+  <!-- Independent delivery paths to each consumer. -->
+  <path class="connector" d="M 620 506 V 552 H 260 V 610"/>
+  <path class="connector" d="M 700 506 V 610"/>
+  <path class="connector" d="M 780 506 V 552 H 1140 V 610"/>
+
+  <rect class="box" x="70" y="610" width="380" height="118" rx="16"/>
+  <text class="consumer" x="260" y="678">Premium Management</text>
+
+  <rect class="box" x="510" y="610" width="380" height="118" rx="16"/>
+  <text class="consumer" x="700" y="678">Document Management</text>
+
+  <rect class="box" x="950" y="610" width="380" height="118" rx="16"/>
+  <text class="consumer" x="1140" y="678">Analytics</text>
+
+  <text x="700" y="804" font-size="23" fill="#56616b">Consumers depend on the contract, not the producer’s internals.</text>
+</svg>
