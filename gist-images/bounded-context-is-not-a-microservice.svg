@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title description">
+  <title id="title">A Bounded Context Is Not a Microservice</title>
+  <desc id="description">Policy Servicing is a bounded context defined by language, model, rules, and ownership. It can be deployed as a modular monolith, multiple services, or another deployment. Domain boundary does not equal deployment boundary.</desc>
+
+  <!-- All artwork is native SVG: rectangles, paths, and editable text. -->
+  <rect width="1400" height="860" fill="#F7F6F2"/>
+
+  <g fill="#FFFFFF" stroke="#29323B" stroke-width="2">
+    <rect x="440" y="85" width="520" height="285" rx="22"/>
+    <rect x="100" y="570" width="380" height="140" rx="20"/>
+    <rect x="510" y="570" width="380" height="140" rx="20"/>
+    <rect x="920" y="570" width="380" height="140" rx="20"/>
+  </g>
+
+  <!-- One semantic boundary, three equally weighted deployment choices. -->
+  <g fill="none" stroke="#29323B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M700 370 V411 M700 470 V514"/>
+    <path d="M290 570 V514 H1110 V570 M700 514 V570"/>
+    <path d="M282 560 L290 570 L298 560 M692 560 L700 570 L708 560 M1102 560 L1110 570 L1118 560"/>
+  </g>
+
+  <g fill="#29323B" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="700" y="157" font-size="42" font-weight="600">Policy Servicing</text>
+    <text x="700" y="205" font-size="28">Bounded Context</text>
+    <text x="700" y="273" font-size="26">Language • Model</text>
+    <text x="700" y="314" font-size="26">Rules • Ownership</text>
+
+    <text x="700" y="450" font-size="25">can be deployed as</text>
+
+    <text x="290" y="650" font-size="30" font-weight="600">Modular Monolith</text>
+    <text x="700" y="650" font-size="30" font-weight="600">Multiple Services</text>
+    <text x="1110" y="650" font-size="30" font-weight="600">Other Deployment</text>
+
+    <text x="700" y="788" font-size="30">Domain boundary ≠ deployment boundary</text>
+  </g>
+</svg>
