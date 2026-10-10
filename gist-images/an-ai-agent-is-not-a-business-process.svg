@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1010" viewBox="0 0 1040 1010" role="img" aria-labelledby="title description">
+  <title id="title">An AI Agent Is Not a Business Process</title>
+  <desc id="description">Architecture assets, Gist 7. Claims Management owns the business process, authority, and accountability. It governs Process Orchestration, which owns durable business state and enforces states, rules, and controls. Orchestration delegates authorized tasks to an AI Agent. The agent plans, executes, and may coordinate delegated tasks within granted authority, using Document Services, Fraud Assessment, and External Systems. Task capability does not confer process ownership or business authority. Arrows indicate governance, delegation, and tool invocation, not transfer of ownership.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#8092A5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <!-- Standalone vector artwork: editable text, native paths, no linked assets. -->
+  <rect width="1040" height="1010" fill="#FAF9F6"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="520" y="48" text-anchor="middle" fill="#526174" font-size="15" letter-spacing="2">ARCHITECTURE ASSETS / 07</text>
+    <text x="520" y="98" text-anchor="middle" fill="#17283D" font-size="34" font-weight="700">An AI Agent Is Not a Business Process</text>
+    <text x="520" y="133" text-anchor="middle" fill="#526174" font-size="20">Business ownership → controlled delegation → task capability</text>
+
+    <g fill="#FFFFFF" stroke="#A6B3C1" stroke-width="1.5">
+      <rect x="200" y="174" width="640" height="122" rx="16"/>
+      <rect x="200" y="360" width="640" height="142" rx="16"/>
+      <rect x="200" y="566" width="640" height="162" rx="16"/>
+      <rect x="40" y="816" width="300" height="104" rx="14"/>
+      <rect x="370" y="816" width="300" height="104" rx="14"/>
+      <rect x="700" y="816" width="300" height="104" rx="14"/>
+    </g>
+
+    <!-- Governance and delegation are directional; ownership is not transferred. -->
+    <g fill="none" stroke="#8092A5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M520 296 V360" marker-end="url(#arrow)"/>
+      <path d="M520 502 V566" marker-end="url(#arrow)"/>
+      <!-- One shared invocation bus, three separate arrowheads at tool boundaries. -->
+      <path d="M520 728 V780"/>
+      <path d="M190 780 H850"/>
+      <path d="M190 780 V816" marker-end="url(#arrow)"/>
+      <path d="M520 780 V816" marker-end="url(#arrow)"/>
+      <path d="M850 780 V816" marker-end="url(#arrow)"/>
+    </g>
+    <circle cx="520" cy="780" r="3" fill="#8092A5"/>
+
+    <g text-anchor="middle">
+      <g fill="#17283D" font-size="26" font-weight="700">
+        <text x="520" y="214">Claims Management</text>
+        <text x="520" y="401">Process Orchestration</text>
+        <text x="520" y="607">AI Agent</text>
+      </g>
+      <g fill="#526174" font-size="21">
+        <text x="520" y="248">Owns the business process and authority</text>
+        <text x="520" y="277" font-size="18">Accountable for outcomes and business decisions</text>
+        <text x="520" y="437">States, rules, and controls</text>
+        <text x="520" y="473" font-weight="700">Owns durable business state</text>
+        <text x="520" y="642">Plans and executes authorized tasks</text>
+        <text x="520" y="674" font-size="19">May coordinate delegated tasks within granted authority</text>
+        <text x="520" y="704" font-size="19">No automatic ownership of business authority</text>
+      </g>
+      <g fill="#17283D" font-size="23" font-weight="700">
+        <text x="190" y="858">Document Services</text>
+        <text x="520" y="858">Fraud Assessment</text>
+        <text x="850" y="858">External Systems</text>
+      </g>
+      <g fill="#526174" font-size="18">
+        <text x="190" y="891">Extract and validate</text>
+        <text x="520" y="891">Assess risk signals</text>
+        <text x="850" y="891">Query and act via APIs</text>
+      </g>
+      <text x="520" y="974" fill="#17283D" font-size="27" font-weight="700">Capability ≠ Process ownership</text>
+    </g>
+    <g fill="#526174" font-size="17">
+      <text x="540" y="334">governs</text>
+      <text x="540" y="540">delegates authorized tasks</text>
+      <text x="540" y="758">invokes permitted tools</text>
+    </g>
+  </g>
+</svg>
