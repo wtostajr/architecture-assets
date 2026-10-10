@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1040" viewBox="0 0 1400 1040" role="img" aria-labelledby="title description">
+  <title id="title">Where Does AI Belong in the Architecture?</title>
+  <desc id="description">The Underwriting bounded context owns the business decision. Decision Policy supplies rules, limits, and controls to Decision Evaluation. AI Risk Assessment supplies scores, predictions, and recommendations as input only. Decision Evaluation retains authority and accountability and produces the final Underwriting Decision. AI has no independent decision authority.</desc>
+  <!-- Native vector geometry and editable text only; no external assets. -->
+  <rect width="1400" height="1040" fill="#F7F6F2"/>
+  <g stroke="#29323B" stroke-width="2">
+    <rect x="70" y="140" width="1260" height="780" rx="22" fill="none"/>
+    <g fill="#FFFFFF">
+      <rect x="150" y="285" width="500" height="145" rx="20"/>
+      <rect x="750" y="285" width="500" height="145" rx="20"/>
+      <rect x="440" y="550" width="520" height="145" rx="20"/>
+      <rect x="440" y="785" width="520" height="90" rx="20"/>
+    </g>
+  </g>
+  <!-- Separate input routes enter evaluation. Only evaluation reaches the decision. -->
+  <g fill="none" stroke="#29323B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 430 V500 H550 V550"/>
+    <path d="M1000 430 V500 H850 V550"/>
+    <path d="M542 540 L550 550 L558 540"/>
+    <path d="M842 540 L850 550 L858 540"/>
+    <path d="M700 695 V785"/>
+    <path d="M692 775 L700 785 L708 775"/>
+  </g>
+  <g fill="#29323B" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="700" y="83" font-size="40" font-weight="600">Where Does AI Belong in the Architecture?</text>
+    <text x="700" y="197" font-size="34" font-weight="600">Underwriting Bounded Context</text>
+    <text x="700" y="241" font-size="26">Owns the business decision</text>
+    <text x="400" y="343" font-size="32" font-weight="600">Decision Policy</text>
+    <text x="400" y="389" font-size="26">Rules • Limits • Controls</text>
+    <text x="1000" y="343" font-size="32" font-weight="600">AI Risk Assessment</text>
+    <text x="1000" y="389" font-size="25">Scores • Predictions • Recommendations</text>
+    <text x="540" y="478" font-size="24">governs evaluation</text>
+    <text x="860" y="478" font-size="24">supplies input only</text>
+    <text x="700" y="608" font-size="32" font-weight="600">Decision Evaluation</text>
+    <text x="700" y="654" font-size="26">Authority • Accountability</text>
+    <text x="816" y="748" font-size="24">produces</text>
+    <text x="700" y="841" font-size="32" font-weight="600">Underwriting Decision</text>
+    <text x="700" y="983" font-size="28">AI informs the decision. It has no independent decision authority.</text>
+  </g>
+</svg>
