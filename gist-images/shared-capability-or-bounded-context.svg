@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020" role="img" aria-labelledby="title description">
+  <title id="title">When Does a Shared Capability Become a Bounded Context?</title>
+  <desc id="description">Two examples distinguish reuse from domain ownership. Underwriting, Claims, and Fraud use shared Document Processing for ingestion, extraction, and classification, while consumers retain business acceptance rules. Premium Management, Claims Management, and Commission Management request Payment and Money Movement, an independent bounded context owning its model, lifecycle, and invariants, including payment attempts, settlement, and refunds. Document Processing can also be a bounded context when it owns a distinct domain model and business rules. Reuse does not determine domain ownership.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#687582" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1600" height="1020" fill="#F7F6F2"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="800" y="65" fill="#29323B" font-size="34" font-weight="600">When Does a Shared Capability Become a Bounded Context?</text>
+    <text x="800" y="106" fill="#68717A" font-size="21">The distinction is ownership of a domain model and business rules.</text>
+    <g fill="none" stroke="#B9BFC4" stroke-width="1.5">
+      <rect x="50" y="151" width="730" height="631" rx="22"/>
+      <rect x="820" y="151" width="730" height="631" rx="22"/>
+    </g>
+    <g fill="#29323B" font-size="28" font-weight="600">
+      <text x="415" y="201">Shared technical capability</text>
+      <text x="1185" y="201">Independent bounded context</text>
+    </g>
+    <g fill="#68717A" font-size="20">
+      <text x="415" y="238">Consumers own business acceptance rules</text>
+      <text x="1185" y="238">The provider owns the money movement domain</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#89949E" stroke-width="1.5">
+      <rect x="80" y="281" width="210" height="96" rx="15"/>
+      <rect x="310" y="281" width="210" height="96" rx="15"/>
+      <rect x="540" y="281" width="210" height="96" rx="15"/>
+      <rect x="850" y="281" width="210" height="96" rx="15"/>
+      <rect x="1080" y="281" width="210" height="96" rx="15"/>
+      <rect x="1310" y="281" width="210" height="96" rx="15"/>
+      <rect x="165" y="491" width="500" height="166" rx="19"/>
+      <rect x="910" y="491" width="550" height="230" rx="19" stroke="#566575"/>
+    </g>
+    <g fill="#29323B" font-size="23" font-weight="600">
+      <text x="185" y="337">Underwriting</text>
+      <text x="415" y="337">Claims</text>
+      <text x="645" y="337">Fraud</text>
+      <text x="955" y="321">Premium<tspan x="955" dy="29">Management</tspan></text>
+      <text x="1185" y="321">Claims<tspan x="1185" dy="29">Management</tspan></text>
+      <text x="1415" y="321">Commission<tspan x="1415" dy="29">Management</tspan></text>
+    </g>
+    <g fill="none" stroke="#687582" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M185 377 V419 H415 M645 377 V419 H415 M415 377 V491" marker-end="url(#arrow)"/>
+      <path d="M955 377 V419 H1185 M1415 377 V419 H1185 M1185 377 V491" marker-end="url(#arrow)"/>
+    </g>
+    <g fill="#F7F6F2">
+      <rect x="359" y="438" width="112" height="29" rx="6"/>
+      <rect x="1124" y="438" width="122" height="29" rx="6"/>
+    </g>
+    <g fill="#68717A" font-size="20">
+      <text x="415" y="460">use</text>
+      <text x="1185" y="460">request</text>
+    </g>
+    <g fill="#29323B" font-size="29" font-weight="600">
+      <text x="415" y="546">Document Processing</text>
+      <text x="1185" y="546">Payment &amp; Money Movement</text>
+    </g>
+    <g fill="#68717A" font-size="22">
+      <text x="415" y="591">Ingestion · Extraction · Classification</text>
+      <text x="415" y="628">Shared processing functions</text>
+      <text x="1185" y="590">Own model · Own lifecycle · Own invariants</text>
+      <text x="1185" y="688">Payment attempts · Settlement · Refunds</text>
+    </g>
+    <path d="M940 619 H1430" stroke="#D8DCDF" stroke-width="1"/>
+    <text x="1185" y="650" fill="#68717A" font-size="18">DOMAIN CONCEPTS &amp; RESPONSIBILITIES</text>
+    <text x="415" y="704" fill="#29323B" font-size="21">Each consumer decides what is acceptable</text>
+    <text x="415" y="735" fill="#68717A" font-size="20">for its own business process.</text>
+    <text x="800" y="833" fill="#68717A" font-size="20">Document Processing can also be a bounded context when it owns</text>
+    <text x="800" y="863" fill="#68717A" font-size="20">a distinct domain model and business rules. These examples show different ownership.</text>
+    <path d="M330 900 H1270" stroke="#C6CBCF" stroke-width="1.3"/>
+    <text x="800" y="953" fill="#29323B" font-size="32" font-weight="600">Reuse does not determine domain ownership.</text>
+  </g>
+</svg>
