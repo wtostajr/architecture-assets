@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+<title id="title">Business Rules Evolve. Historical Decisions Remain Explainable.</title>
+<desc id="description">A conceptual business rule timeline progresses from Rule v1 in January to Rule v2 in March and Rule v3 in June. Each policy issuance decision retains evidence and its applicable rule reference after that version is superseded. Policy A's June renewal resolves its applicable version using renewal applicability rules; Rule v3 does not automatically apply. Effective time and recorded time may differ.</desc>
+<defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#94A3B8" stroke-width="1.2"/></marker></defs>
+<rect width="1200" height="760" fill="#FAF9F6"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#17283D">
+<text x="48" y="57" font-size="30" fill="#17283D" font-weight="700" text-anchor="start">Business Rules Evolve. Historical Decisions Remain Explainable.</text>
+<text x="48" y="89" font-size="19" fill="#526174" font-weight="400" text-anchor="start">Rule applicability depends on business context and effective time.</text>
+<text x="48" y="132" font-size="12" fill="#526174" font-weight="700" text-anchor="start">RULE EVOLUTION</text>
+<text x="1152" y="132" font-size="14" fill="#526174" font-weight="400" text-anchor="end">Illustrative issuance decisions in their business context</text>
+<g id="rule-evolution" aria-label="Successive rule versions and their effective dates">
+<text x="220" y="163" font-size="17" fill="#526174" font-weight="700" text-anchor="middle">January</text>
+<rect x="48" y="178" width="344" height="100" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="220" y="209" font-size="24" fill="#17283D" font-weight="700" text-anchor="middle">Rule v1</text>
+<text x="220" y="237" font-size="16" fill="#526174" font-weight="400" text-anchor="middle">Initially effective</text>
+<line x1="220" y1="278" x2="220" y2="315" stroke="#94A3B8" stroke-width="1.4"/>
+<text x="600" y="163" font-size="17" fill="#526174" font-weight="700" text-anchor="middle">March</text>
+<rect x="428" y="178" width="344" height="100" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="600" y="209" font-size="24" fill="#17283D" font-weight="700" text-anchor="middle">Rule v2</text>
+<text x="600" y="237" font-size="16" fill="#526174" font-weight="400" text-anchor="middle">Supersedes v1 for applicable</text>
+<text x="600" y="259" font-size="16" fill="#526174" font-weight="400" text-anchor="middle">new decisions</text>
+<line x1="600" y1="278" x2="600" y2="315" stroke="#94A3B8" stroke-width="1.4"/>
+<text x="980" y="163" font-size="17" fill="#526174" font-weight="700" text-anchor="middle">June</text>
+<rect x="808" y="178" width="344" height="100" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="980" y="209" font-size="24" fill="#17283D" font-weight="700" text-anchor="middle">Rule v3</text>
+<text x="980" y="237" font-size="16" fill="#526174" font-weight="400" text-anchor="middle">Supersedes v2 for applicable</text>
+<text x="980" y="259" font-size="16" fill="#526174" font-weight="400" text-anchor="middle">new decisions</text>
+<line x1="980" y1="278" x2="980" y2="315" stroke="#94A3B8" stroke-width="1.4"/>
+<line x1="392" y1="216" x2="425" y2="216" stroke="#94A3B8" stroke-width="1.4" marker-end="url(#arrow)"/>
+<line x1="772" y1="216" x2="805" y2="216" stroke="#94A3B8" stroke-width="1.4" marker-end="url(#arrow)"/>
+</g><g id="issuance-decisions" aria-label="Historical issuance evidence remains linked to the applicable rule version">
+<rect x="48" y="315" width="344" height="116" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="70" y="344" font-size="20" fill="#17283D" font-weight="700" text-anchor="start">Policy A — January</text>
+<text x="70" y="370" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Issuance decision</text>
+<text x="70" y="393" font-size="17" fill="#17283D" font-weight="700" text-anchor="start">Rule v1 applied</text>
+<text x="70" y="415" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Decision evidence retained</text>
+<rect x="428" y="315" width="344" height="116" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="450" y="344" font-size="20" fill="#17283D" font-weight="700" text-anchor="start">Policy B — March</text>
+<text x="450" y="370" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Issuance decision</text>
+<text x="450" y="393" font-size="17" fill="#17283D" font-weight="700" text-anchor="start">Rule v2 applied</text>
+<text x="450" y="415" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Decision evidence retained</text>
+<rect x="808" y="315" width="344" height="116" rx="12" fill="#FFFFFF" stroke="#D8DEE5"/>
+<text x="830" y="344" font-size="20" fill="#17283D" font-weight="700" text-anchor="start">Policy C — June</text>
+<text x="830" y="370" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Issuance decision</text>
+<text x="830" y="393" font-size="17" fill="#17283D" font-weight="700" text-anchor="start">Rule v3 applied</text>
+<text x="830" y="415" font-size="16" fill="#526174" font-weight="400" text-anchor="start">Decision evidence retained</text>
+</g><g id="later-transactions" aria-label="Renewal applicability is resolved independently of the issuance decision">
+<rect x="48" y="451" width="1104" height="137" rx="12" fill="#F0F3F5" stroke="#D8DEE5"/>
+<text x="70" y="480" font-size="21" fill="#17283D" font-weight="700" text-anchor="start">Later transactions may require different rules</text>
+<text x="70" y="516" font-size="19" fill="#17283D" font-weight="700" text-anchor="start">Policy A</text>
+<text x="70" y="541" font-size="15" fill="#526174" font-weight="400" text-anchor="start">Issued under Rule v1</text>
+<line x1="228" y1="519" x2="283" y2="519" stroke="#94A3B8" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="305" y="516" font-size="19" fill="#17283D" font-weight="700" text-anchor="start">Renewal in June</text>
+<line x1="481" y1="519" x2="537" y2="519" stroke="#94A3B8" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="559" y="516" font-size="19" fill="#17283D" font-weight="700" text-anchor="start">Applicable rules resolved for renewal</text>
+<text x="559" y="544" font-size="17" fill="#526174" font-weight="400" text-anchor="start">Version determined by renewal applicability rules</text>
+<text x="70" y="570" font-size="16" fill="#526174" font-weight="400" text-anchor="start">A later transaction has its own temporal and contractual conditions.</text>
+</g><g id="time-definitions" aria-label="Effective time and recorded time are distinct">
+<text x="48" y="622" font-size="16" fill="#17283D" font-weight="700" text-anchor="start">Effective time:</text>
+<text x="178" y="622" font-size="16" fill="#526174" font-weight="400" text-anchor="start">When a rule applies in the business domain.</text>
+<text x="48" y="648" font-size="16" fill="#17283D" font-weight="700" text-anchor="start">Recorded time:</text>
+<text x="178" y="648" font-size="16" fill="#526174" font-weight="400" text-anchor="start">When the system recorded the rule or change.</text>
+<text x="1152" y="648" font-size="16" fill="#526174" font-weight="400" text-anchor="end">These concepts may differ.</text>
+</g><g id="takeaway">
+<line x1="48" y1="675" x2="1152" y2="675" stroke="#94A3B8" stroke-width="1.4"/>
+<text x="600" y="715" font-size="27" fill="#17283D" font-weight="700" text-anchor="middle">Today's rules should not silently redefine yesterday's decisions.</text>
+</g></g></svg>
