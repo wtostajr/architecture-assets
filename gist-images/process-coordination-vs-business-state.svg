@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Who Owns the State of a Long-Running Business Process?</title>
+<desc id="desc">The process coordinator owns workflow progress: Awaiting fraud assessment, Awaiting claim approval, Payment requested, Awaiting settlement, and Completed. It operates under the accountable domain’s authority and is not necessarily a separate bounded context. Paired non-crossing arrows show commands down to independent bounded contexts and business outcomes up to the coordinator. Claims Management owns claim assessment and approval, Fraud Management owns fraud findings, and Payment and Money Movement owns payment execution and settlement. Business outcomes advance workflow progress; business decisions and business state remain with their owning contexts.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#94A3B8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="1200" height="760" fill="#FAF9F6"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#526174">
+
+<text x="600" y="53" text-anchor="middle" font-size="29" font-weight="600" fill="#17283D">Who Owns the State of a</text>
+<text x="600" y="89" text-anchor="middle" font-size="29" font-weight="600" fill="#17283D">Long-Running Business Process?</text>
+<text x="600" y="119" text-anchor="middle" font-size="17" font-weight="400" fill="#526174">Workflow progress and business state have different owners.</text>
+<rect x="48" y="148" width="1104" height="196" rx="16" fill="#FFFFFF" stroke="#DCE2E8"/>
+<text x="72" y="181" text-anchor="start" font-size="14" font-weight="700" fill="#17283D">PROCESS COORDINATOR</text>
+<text x="72" y="208" text-anchor="start" font-size="21" font-weight="600" fill="#17283D">Owns workflow progress</text>
+<text x="72" y="234" text-anchor="start" font-size="15" font-weight="400" fill="#526174">Operates under the accountable domain’s authority; not necessarily a separate bounded context.</text>
+<rect x="72" y="261" width="180" height="58" rx="10" fill="#FAF9F6" stroke="#E2E7ED"/>
+<text x="162" y="286" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">Awaiting fraud</text>
+<text x="162" y="305" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">assessment</text>
+<path d="M259 290 L283 290" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="291" y="261" width="180" height="58" rx="10" fill="#FAF9F6" stroke="#E2E7ED"/>
+<text x="381" y="286" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">Awaiting claim</text>
+<text x="381" y="305" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">approval</text>
+<path d="M478 290 L502 290" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="510" y="261" width="180" height="58" rx="10" fill="#FAF9F6" stroke="#E2E7ED"/>
+<text x="600" y="286" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">Payment</text>
+<text x="600" y="305" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">requested</text>
+<path d="M697 290 L721 290" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="729" y="261" width="180" height="58" rx="10" fill="#FAF9F6" stroke="#E2E7ED"/>
+<text x="819" y="286" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">Awaiting</text>
+<text x="819" y="305" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">settlement</text>
+<path d="M916 290 L940 290" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="948" y="261" width="180" height="58" rx="10" fill="#FAF9F6" stroke="#E2E7ED"/>
+<text x="1038" y="295" text-anchor="middle" font-size="15" font-weight="500" fill="#17283D">Completed</text>
+<path d="M136 344 L136 514" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M312 514 L312 344" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="54" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="136" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">COMMAND</text>
+<text x="136" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Assess / approve</text>
+<text x="136" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">claim</text>
+<rect x="230" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="312" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">BUSINESS OUTCOME</text>
+<text x="312" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Claim approved</text>
+<text x="312" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">or rejected</text>
+<rect x="48" y="514" width="352" height="145" rx="16" fill="#FFFFFF" stroke="#DCE2E8"/>
+<text x="224" y="551" text-anchor="middle" font-size="20" font-weight="600" fill="#17283D">Claims Management</text>
+<text x="224" y="590" text-anchor="middle" font-size="16" font-weight="400" fill="#526174">Claim assessment &amp; approval</text>
+<text x="224" y="625" text-anchor="middle" font-size="13" font-weight="400" fill="#526174">Approval rules and claim state</text>
+<path d="M512 344 L512 514" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M688 514 L688 344" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="430" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="512" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">COMMAND</text>
+<text x="512" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Assess fraud</text>
+<text x="512" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">risk</text>
+<rect x="606" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="688" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">BUSINESS OUTCOME</text>
+<text x="688" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Fraud assessment</text>
+<text x="688" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">completed</text>
+<rect x="424" y="514" width="352" height="145" rx="16" fill="#FFFFFF" stroke="#DCE2E8"/>
+<text x="600" y="551" text-anchor="middle" font-size="20" font-weight="600" fill="#17283D">Fraud Management</text>
+<text x="600" y="590" text-anchor="middle" font-size="16" font-weight="400" fill="#526174">Fraud assessment &amp; findings</text>
+<text x="600" y="625" text-anchor="middle" font-size="13" font-weight="400" fill="#526174">Fraud rules and findings state</text>
+<path d="M888 344 L888 514" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M1064 514 L1064 344" fill="none" stroke="#94A3B8" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="806" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="888" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">COMMAND</text>
+<text x="888" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Execute approved</text>
+<text x="888" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">payment</text>
+<rect x="982" y="388" width="164" height="80" rx="5" fill="#FAF9F6" stroke="#FAF9F6"/>
+<text x="1064" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#526174">BUSINESS OUTCOME</text>
+<text x="1064" y="432" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">Payment executed</text>
+<text x="1064" y="451" text-anchor="middle" font-size="14" font-weight="400" fill="#526174">/ settled</text>
+<rect x="800" y="514" width="352" height="145" rx="16" fill="#FFFFFF" stroke="#DCE2E8"/>
+<text x="976" y="545" text-anchor="middle" font-size="20" font-weight="600" fill="#17283D">Payment &amp;</text>
+<text x="976" y="570" text-anchor="middle" font-size="20" font-weight="600" fill="#17283D">Money Movement</text>
+<text x="976" y="601" text-anchor="middle" font-size="16" font-weight="400" fill="#526174">Payment execution &amp; settlement</text>
+<text x="976" y="632" text-anchor="middle" font-size="13" font-weight="400" fill="#526174">Payment rules and payment state</text>
+<text x="600" y="681" text-anchor="middle" font-size="12" font-weight="600" fill="#526174">INDEPENDENT BOUNDED CONTEXTS · EACH OWNS ITS BUSINESS DECISIONS AND STATE</text>
+<path d="M260 692 H940" stroke="#DCE2E8"/>
+<text x="600" y="728" text-anchor="middle" font-size="23" font-weight="600" fill="#17283D">Coordinate the process. Keep business state with its owner.</text>
+</g></svg>
