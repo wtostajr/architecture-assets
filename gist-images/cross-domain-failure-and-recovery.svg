@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1170" viewBox="0 0 1600 1170" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Cross-domain failure and recovery decision model</title>
+<desc id="svg-desc">After a cross-domain failure, first determine whether the authoritative business outcome is known. If it is unknown, reconcile with the owning domain. If it remains unknown, escalate to a managed exception. With a confirmed outcome, evaluate the business policy: continue if completed, retry if safe, compensate prior effects only when required and permitted, or escalate. Execute through owning domains and preserve recovery history.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#97A8B4" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#176E7A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="1170" fill="#FFFFFF"/>
+
+<text x="72" y="67" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" letter-spacing="1.6">ARCHITECTURE NOTES  /  DISTRIBUTED SYSTEMS</text>
+<text x="72" y="124" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="47" font-weight="700" text-anchor="start">When a cross-domain process fails</text>
+<text x="72" y="162" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start">A recovery decision model — not a distributed rollback</text>
+<rect x="1348" y="45" width="180" height="36" rx="18" fill="#F2F7F8" stroke="#D5E6E8" stroke-width="1.5"/>
+<text x="1438" y="69" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.2">GIST 11</text>
+<rect x="72" y="199" width="1456" height="104" rx="14" fill="#F7F9FA" stroke="#E3E9ED" stroke-width="1.5"/>
+<rect x="72" y="199" width="6" height="104" rx="3" fill="#B5674B"/>
+<text x="102" y="232" fill="#AD672C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start" letter-spacing="1.25">OBSERVED FAILURE</text>
+<text x="102" y="268" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="25" font-weight="600" text-anchor="start">Payment authorization succeeds; policy issuance times out.</text>
+<text x="1486" y="249" fill="#B44F49" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end" letter-spacing="0.45">TIMEOUT ≠ FAILURE</text>
+<text x="1486" y="274" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="end">The operation may have completed.</text>
+<text x="72" y="359" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">01</text>
+<text x="111" y="359" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0.7">ESTABLISH THE ACTUAL OUTCOME</text>
+<path d="M72 373 H1528" stroke="#DCE3E7" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="554" y="398" width="492" height="80" rx="16" fill="#FFFFFF" stroke="#6F8898" stroke-width="2"/>
+<text x="800" y="428" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Is the business outcome</text>
+<text x="800" y="457" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">authoritatively known?</text>
+<path d="M800 478 V507" stroke="#97A8B4" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M314 507 H1286" stroke="#97A8B4" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M314 507 V544" stroke="#97A8B4" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1286 507 V544" stroke="#97A8B4" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="224" y="490" width="180" height="29" rx="10" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<text x="314" y="510" fill="#AD672C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="0.3">NO  /  UNKNOWN</text>
+<rect x="1191" y="490" width="190" height="29" rx="10" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<text x="1286" y="510" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="0.3">YES  /  CONFIRMED</text>
+<rect x="72" y="548" width="486" height="124" rx="15" fill="#FEFAF5" stroke="#E8DCCE" stroke-width="1.5"/>
+<rect x="72" y="548" width="6" height="124" rx="3" fill="#C58A4F"/>
+<text x="102" y="581" fill="#AD672C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" letter-spacing="1.1">RECONCILE</text>
+<text x="102" y="612" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">Consult the owning domain;</text>
+<text x="102" y="642" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">correlate IDs and delayed events.</text>
+<rect x="1042" y="548" width="486" height="124" rx="15" fill="#F3F9F8" stroke="#CFDFDE" stroke-width="1.5"/>
+<rect x="1042" y="548" width="6" height="124" rx="3" fill="#176E7A"/>
+<text x="1072" y="581" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" letter-spacing="0.95">CONFIRMED BUSINESS STATE</text>
+<text x="1072" y="612" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">Trust authoritative domain state,</text>
+<text x="1072" y="642" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">not a transport acknowledgment.</text>
+<path d="M558 610 H1035" stroke="#176E7A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="697" y="594" width="188" height="30" rx="12" fill="#FFFFFF"/>
+<text x="791" y="614" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="0.5">IF ESTABLISHED</text>
+<path d="M316 672 V705" stroke="#C58A4F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="109" y="704" width="414" height="48" rx="12" fill="#FFF8F4" stroke="#E8DCCE" stroke-width="1.5"/>
+<text x="316" y="734" fill="#AD672C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Still unknown → managed exception</text>
+<text x="72" y="795" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">02</text>
+<text x="111" y="795" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0.7">CHOOSE AN AUTHORIZED RESPONSE</text>
+<path d="M72 809 H1528" stroke="#DCE3E7" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1286 672 V835 H1028" stroke="#176E7A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="565" y="829" width="466" height="62" rx="14" fill="#F3F9F8" stroke="#CFDFDE" stroke-width="1.5"/>
+<text x="798" y="855" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">Evaluate confirmed outcome</text>
+<text x="798" y="879" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">and business recovery policy</text>
+<path d="M798 891 V920" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M250 920 H1350" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M244 920 V950" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M610 920 V950" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M976 920 V950" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1350 920 V950" stroke="#97A8B4" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="72" y="955" width="358" height="132" rx="15" fill="#F3F9F8" stroke="#D0E1E0" stroke-width="1.5"/>
+<rect x="72" y="955" width="358" height="5" rx="2" fill="#176E7A"/>
+<text x="92" y="989" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0.85">CONTINUE</text>
+<text x="92" y="1024" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="19" font-weight="650" text-anchor="start">If already completed</text>
+<text x="92" y="1058" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Resume from confirmed state.</text>
+<rect x="438" y="955" width="358" height="132" rx="15" fill="#F3F9F8" stroke="#D0E1E0" stroke-width="1.5"/>
+<rect x="438" y="955" width="358" height="5" rx="2" fill="#176E7A"/>
+<text x="458" y="989" fill="#176E7A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0.85">RETRY</text>
+<text x="458" y="1024" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="19" font-weight="650" text-anchor="start">If incomplete and safe</text>
+<text x="458" y="1058" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Bounded, idempotent operation.</text>
+<rect x="804" y="955" width="358" height="132" rx="15" fill="#FEFAF5" stroke="#E8DCCE" stroke-width="1.5"/>
+<rect x="804" y="955" width="358" height="5" rx="2" fill="#AD672C"/>
+<text x="824" y="989" fill="#AD672C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0.85">COMPENSATE</text>
+<text x="824" y="1024" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="19" font-weight="650" text-anchor="start">If correction is required</text>
+<text x="824" y="1058" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">New action by the owning domain.</text>
+<rect x="1170" y="955" width="358" height="132" rx="15" fill="#FDF8F7" stroke="#EADBD9" stroke-width="1.5"/>
+<rect x="1170" y="955" width="358" height="5" rx="2" fill="#B44F49"/>
+<text x="1190" y="989" fill="#B44F49" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0.85">ESCALATE</text>
+<text x="1190" y="1024" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="19" font-weight="650" text-anchor="start">If no safe automated path</text>
+<text x="1190" y="1058" fill="#506272" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Managed business exception.</text>
+<path d="M72 1111 H1528" stroke="#DCE3E7" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="1143" fill="#172A38" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" letter-spacing="0.45">03  EXECUTE THROUGH THE OWNING DOMAIN. PRESERVE THE ORIGINAL AND RECOVERY HISTORY.</text>
+<text x="1528" y="1143" fill="#B44F49" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end" letter-spacing="0.2">RETRY EXHAUSTED? REASSESS POLICY.</text>
+</svg>
