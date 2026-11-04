@@ -21,22 +21,23 @@ The objective is not to prescribe universal patterns, but to help architects und
 6. Avoid duplicating previously published topics.
 7. Preserve technical depth over publication frequency.
 
+
 ## Publication schedule
 
-| Week | Date | Title | Theme |
-|---|---|---|---|
-| 1 | 2026-11-10 | What Happens When a Cross-Domain Process Fails? | Resilience & Reliability |
-| 1 | 2026-11-13 | When Is a Retry Actually Safe? | Resilience & Reliability |
-| 2 | 2026-11-17 | When Is Eventual Consistency Acceptable? | Consistency & Data |
-| 2 | 2026-11-20 | Who Owns the Truth When Data Is Replicated? | Consistency & Data |
-| 3 | 2026-11-24 | How Do You Know an Architecture Is Working? | Architecture Quality |
-| 3 | 2026-11-27 | When Does an Abstraction Become a Liability? | Architecture Quality |
-| 4 | 2026-12-01 | Where Should Authorization Decisions Live? | Security & Trust |
-| 4 | 2026-12-04 | What Does Zero Trust Mean Inside an Application? | Security & Trust |
-| 5 | 2026-12-08 | Can You Observe a Business Outcome Across Services? | Operational Architecture |
-| 5 | 2026-12-11 | What Happens When a Dependency Becomes Unavailable? | Operational Architecture |
-| 6 | 2026-12-15 | When Should You Split a System? | Architecture Evolution |
-| 6 | 2026-12-18 | How Do You Modernize Without a Big-Bang Rewrite? | Architecture Evolution |
+| Week | Date | Title | Theme | Issue |
+|---|---|---|---|---|
+| 1 | 2026-11-10 | What Happens When a Cross-Domain Process Fails? | Resilience & Reliability | [#5](https://github.com/wtostajr/architecture-assets/issues/5) |
+| 1 | 2026-11-13 | When Is a Retry Actually Safe? | Resilience & Reliability | [#6](https://github.com/wtostajr/architecture-assets/issues/6) |
+| 2 | 2026-11-17 | When Is Eventual Consistency Acceptable? | Consistency & Data | [#7](https://github.com/wtostajr/architecture-assets/issues/7) |
+| 2 | 2026-11-20 | Who Owns the Truth When Data Is Replicated? | Consistency & Data | [#8](https://github.com/wtostajr/architecture-assets/issues/8) |
+| 3 | 2026-11-24 | How Do You Know an Architecture Is Working? | Architecture Quality | [#9](https://github.com/wtostajr/architecture-assets/issues/9) |
+| 3 | 2026-11-27 | When Does an Abstraction Become a Liability? | Architecture Quality | [#10](https://github.com/wtostajr/architecture-assets/issues/10) |
+| 4 | 2026-12-01 | Where Should Authorization Decisions Live? | Security & Trust | [#11](https://github.com/wtostajr/architecture-assets/issues/11) |
+| 4 | 2026-12-04 | What Does Zero Trust Mean Inside an Application? | Security & Trust | [#12](https://github.com/wtostajr/architecture-assets/issues/12) |
+| 5 | 2026-12-08 | Can You Observe a Business Outcome Across Services? | Operational Architecture | [#13](https://github.com/wtostajr/architecture-assets/issues/13) |
+| 5 | 2026-12-11 | What Happens When a Dependency Becomes Unavailable? | Operational Architecture | [#14](https://github.com/wtostajr/architecture-assets/issues/14) |
+| 6 | 2026-12-15 | When Should You Split a System? | Architecture Evolution | [#15](https://github.com/wtostajr/architecture-assets/issues/15) |
+| 6 | 2026-12-18 | How Do You Modernize Without a Big-Bang Rewrite? | Architecture Evolution | [#16](https://github.com/wtostajr/architecture-assets/issues/16) |
 
 ## Publication workflow
 
