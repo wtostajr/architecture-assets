@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1190" viewBox="0 0 1600 1190" role="img" aria-labelledby="title desc">
+<title id="title">When Is a Retry Actually Safe?</title>
+<desc id="desc">Validate logical identity and matching intent; consult authoritative state; return recorded result if completed, wait if processing, reconcile if unknown, stop if rejected, and only execute if not started with atomic duplicate protection and business authorization.</desc>
+<rect width="1600" height="1190" fill="white"/>
+<text x="72" y="67" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">ARCHITECTURE NOTES  /  DISTRIBUTED SYSTEMS</text>
+<text x="72" y="126" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="48" font-weight="700">When is a retry actually safe?</text>
+<text x="72" y="165" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="400">Operation identity + authoritative state + guarded execution</text>
+<rect x="1350" y="43" width="178" height="38" rx="20" fill="#F2F7F8" stroke="#D5E6E8" stroke-width="1.5"/>
+<text x="1439" y="69" text-anchor="middle" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">GIST 12</text>
+<rect x="72" y="199" width="1456" height="108" rx="14" fill="#F7F9FA" stroke="#E3E9ED" stroke-width="1.5"/>
+<rect x="72" y="199" width="6" height="108" rx="3" fill="#AD672C"/>
+<text x="101" y="232" text-anchor="start" fill="#AD672C" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">OBSERVED CONDITION</text>
+<text x="101" y="274" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">Payment authorization succeeds, but the response times out.</text>
+<text x="1490" y="231" text-anchor="end" fill="#B44F49" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">TIMEOUT ≠ FAILURE</text>
+<text x="1490" y="267" text-anchor="end" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">One business operation, potentially multiple attempts.</text>
+<text x="72" y="362" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">01</text>
+<text x="112" y="362" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">VERIFY THE ORIGINAL BUSINESS INTENT</text>
+<path d="M72 377 H1528" stroke="#DCE3E7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="230" y="404" width="740" height="90" rx="14" fill="white" stroke="#6F8898" stroke-width="1.5"/>
+<text x="600" y="440" text-anchor="middle" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">Same logical operation?</text>
+<text x="600" y="470" text-anchor="middle" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="400">Matching key scope, identity, and original parameters</text>
+<path d="M600 494 V528 H1240 V548" stroke="#97A8B4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M600 528 V548" stroke="#97A8B4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="565" y="527" text-anchor="end" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">YES</text>
+<text x="1257" y="530" text-anchor="start" fill="#B44F49" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">NO</text>
+<rect x="230" y="551" width="740" height="99" rx="14" fill="#F3F9F8" stroke="#CFDFDE" stroke-width="1.5"/>
+<text x="260" y="588" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700">CONSULT AUTHORITATIVE OPERATION STATE</text>
+<text x="260" y="624" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="400">An acknowledgment alone cannot establish the business effect.</text>
+<rect x="1008" y="551" width="520" height="99" rx="14" fill="#FDF8F7" stroke="#EADBD9" stroke-width="1.5"/>
+<text x="1038" y="588" text-anchor="start" fill="#B44F49" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">REJECT IDENTITY / PARAMETER MISMATCH</text>
+<text x="1038" y="624" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="400">A changed intent is not a retry.</text>
+<text x="72" y="710" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">02</text>
+<text x="112" y="710" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">INTERPRET THE AUTHORITATIVE OPERATION STATE</text>
+<path d="M72 725 H1528" stroke="#DCE3E7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="72" y="759" width="268" height="151" rx="14" fill="#F3F9F8" stroke="#DCE3E7" stroke-width="1.5"/>
+<rect x="72" y="759" width="268" height="5" rx="2" fill="#176E7A"/>
+<text x="91" y="798" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">COMPLETED</text>
+<text x="91" y="836" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Return recorded outcome</text>
+<text x="91" y="869" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">Do not execute again</text>
+<rect x="369" y="759" width="268" height="151" rx="14" fill="#F3F9F8" stroke="#DCE3E7" stroke-width="1.5"/>
+<rect x="369" y="759" width="268" height="5" rx="2" fill="#176E7A"/>
+<text x="388" y="798" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">IN PROGRESS</text>
+<text x="388" y="836" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Wait or observe status</text>
+<text x="388" y="869" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">No parallel execution</text>
+<rect x="666" y="759" width="268" height="151" rx="14" fill="#F3F9F8" stroke="#DCE3E7" stroke-width="1.5"/>
+<rect x="666" y="759" width="268" height="5" rx="2" fill="#176E7A"/>
+<text x="685" y="798" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">NOT STARTED</text>
+<text x="685" y="836" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Evaluate current permission</text>
+<text x="685" y="869" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">Execute with atomic guard</text>
+<rect x="963" y="759" width="268" height="151" rx="14" fill="#FEFAF5" stroke="#DCE3E7" stroke-width="1.5"/>
+<rect x="963" y="759" width="268" height="5" rx="2" fill="#AD672C"/>
+<text x="982" y="798" text-anchor="start" fill="#AD672C" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">UNKNOWN</text>
+<text x="982" y="836" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Reconcile first</text>
+<text x="982" y="869" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">Do not blindly repeat</text>
+<rect x="1260" y="759" width="268" height="151" rx="14" fill="#FDF8F7" stroke="#DCE3E7" stroke-width="1.5"/>
+<rect x="1260" y="759" width="268" height="5" rx="2" fill="#B44F49"/>
+<text x="1279" y="798" text-anchor="start" fill="#B44F49" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">REJECTED</text>
+<text x="1279" y="836" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Return terminal rejection</text>
+<text x="1279" y="869" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400">Do not auto-retry</text>
+<text x="72" y="975" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">03</text>
+<text x="112" y="975" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">GUARD EVERY NEW EXECUTION</text>
+<path d="M72 990 H1528" stroke="#DCE3E7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="72" y="1009" width="1456" height="113" rx="14" fill="#F7F9FA" stroke="#E3E9ED" stroke-width="1.5"/>
+<text x="96" y="1042" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">IDENTITY</text>
+<text x="96" y="1072" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">One key per logical operation</text>
+<text x="96" y="1099" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400">Stable across attempts</text>
+<path d="M436 1029 V1105" stroke="#DCE3E7" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="459" y="1042" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">ATOMICITY</text>
+<text x="459" y="1072" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Prevent concurrent duplicates</text>
+<text x="459" y="1099" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400">Record key with business effect</text>
+<path d="M799 1029 V1105" stroke="#DCE3E7" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="822" y="1042" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">DOMAIN RULES</text>
+<text x="822" y="1072" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Respect current invariants</text>
+<text x="822" y="1099" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400">Honor final and expired states</text>
+<path d="M1162 1029 V1105" stroke="#DCE3E7" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1185" y="1042" text-anchor="start" fill="#176E7A" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">RETRY POLICY</text>
+<text x="1185" y="1072" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Backoff + jitter + deadlines</text>
+<text x="1185" y="1099" text-anchor="start" fill="#506272" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400">Explicit owner and retry budget</text>
+<path d="M72 1145 H1528" stroke="#DCE3E7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="1174" text-anchor="start" fill="#172A38" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">SAFE RETRY = ONE INTENDED BUSINESS EFFECT, DESPITE REPEATED ATTEMPTS.</text>
+</svg>
