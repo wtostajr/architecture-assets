@@ -72,6 +72,7 @@ The repository supports a growing collection of public GitHub Gists.
 | What Happens When Business Rules Change? | How should rule versions and historical decisions be managed? |
 | Who Owns the State of a Long-Running Business Process? | How does coordination state differ from authoritative business state? |
 | What Happens When a Cross-Domain Process Fails? | How should independent domains recover when a distributed business process partially succeeds? |
+| When Is a Retry Actually Safe? | How can repeated attempts preserve one intended business effect? |
 
 Each diagram is intended to communicate one architectural distinction clearly.
 
@@ -92,7 +93,8 @@ architecture-assets/
 │   ├── shared-capability-or-bounded-context.svg
 │   ├── business-rule-versioning-and-effective-dates.svg
 │   ├── process-coordination-vs-business-state.svg
-│   └── cross-domain-failure-and-recovery.svg
+│   ├── cross-domain-failure-and-recovery.svg
+│   └── when-is-a-retry-actually-safe.svg
 └── README.md
 ```
 
