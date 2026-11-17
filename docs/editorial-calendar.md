@@ -88,6 +88,4 @@ Before drafting, consult the repository README to avoid repeating published arch
 
 ## Notes
 
-The cross-domain failure and recovery publication already has an approved draft. Its final integration and publication status must be verified before closing the corresponding issue.
-
 Publication dates are editorial targets and may change when additional technical review is necessary.
