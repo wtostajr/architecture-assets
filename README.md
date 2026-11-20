@@ -74,6 +74,7 @@ The repository supports a growing collection of public GitHub Gists.
 | What Happens When a Cross-Domain Process Fails? | How should independent domains recover when a distributed business process partially succeeds? |
 | When Is a Retry Actually Safe? | How can repeated attempts preserve one intended business effect? |
 | When Is Eventual Consistency Acceptable? | When can consumers tolerate stale information without compromising business invariants? |
+| Who Owns the Truth When Data Is Replicated? | Who can authoritatively change a business fact, and how should downstream representations be corrected? |
 
 Each diagram is intended to communicate one architectural distinction clearly.
 
@@ -96,7 +97,8 @@ architecture-assets/
 │   ├── process-coordination-vs-business-state.svg
 │   ├── cross-domain-failure-and-recovery.svg
 │   ├── when-is-a-retry-actually-safe.svg
-│   └── when-is-eventual-consistency-acceptable.svg
+│   ├── when-is-eventual-consistency-acceptable.svg
+│   └── who-owns-the-truth-when-data-is-replicated.svg
 └── README.md
 ```
 
@@ -114,6 +116,7 @@ They use a consistent, minimalist visual language to prioritize architectural cl
 - Business Process Coordination
 - Distributed Recovery and Compensation
 - Consistency Guarantees and Business Invariants
+- Data Authority, Replication, and Reconciliation
 - Temporal Modeling and Rule Versioning
 - AI Agents and Enterprise Systems
 - Business and Technology Alignment
