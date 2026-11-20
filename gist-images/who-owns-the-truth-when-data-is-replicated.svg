@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1140" viewBox="0 0 1440 1140" role="img" aria-labelledby="title desc">
+<title id="title">Who Owns the Truth When Data Is Replicated?</title>
+<desc id="desc">An authoritative owner publishes business facts to a downstream projection. A detected discrepancy is investigated against the relevant source version, meaning, and effective time. If the source fact is wrong, the owner authorizes a correction and propagates it. If the projection is wrong or behind, the consumer repairs or recovers it. Different business meanings may legitimately differ.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#64748b" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="1140" fill="#f8fafc"/>
+<g font-family="Inter, Helvetica, Arial, sans-serif" fill="#0f172a">
+<text x="72" y="65" font-size="15" font-weight="700" letter-spacing="2" fill="#64748b">ARCHITECTURE ASSETS · OWNERSHIP &amp; CORRECTION</text>
+<text x="72" y="124" font-size="40" font-weight="700">Who Owns the Truth When Data Is Replicated?</text>
+<text x="72" y="164" font-size="21" fill="#475569">Copying a business fact does not transfer authority over it.</text>
+<rect x="72" y="216" width="480" height="190" rx="16" fill="#0f172a"/>
+<text x="100" y="254" font-size="14" font-weight="700" letter-spacing="1.5" fill="#cbd5e1">AUTHORITATIVE OWNER</text>
+<text x="100" y="294" font-size="27" font-weight="700" fill="white">Establishes the business fact</text>
+<text x="100" y="333" font-size="19" fill="#e2e8f0">Validates changes, enforces rules,</text>
+<text x="100" y="362" font-size="19" fill="#e2e8f0">and records authorized corrections.</text>
+<rect x="888" y="216" width="480" height="190" rx="16" fill="white" stroke="#cbd5e1"/>
+<text x="916" y="254" font-size="14" font-weight="700" letter-spacing="1.5" fill="#0f766e">DOWNSTREAM CONSUMER</text>
+<text x="916" y="294" font-size="27" font-weight="700">Maintains a representation</text>
+<text x="916" y="333" font-size="19" fill="#475569">Owns projection correctness and</text>
+<text x="916" y="362" font-size="19" fill="#475569">any derived decisions it produces.</text>
+<path d="M552 310 H880" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="720" y="271" font-size="18" text-anchor="middle" font-weight="700">Publish relevant facts</text>
+<text x="720" y="345" font-size="16" text-anchor="middle" fill="#64748b">Source ID · version</text>
+<text x="720" y="369" font-size="16" text-anchor="middle" fill="#64748b">effective time</text>
+<path d="M1128 406 V454 H720 V490" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<rect x="794" y="437" width="274" height="32" rx="8" fill="#f8fafc"/>
+<text x="931" y="459" font-size="17" text-anchor="middle" fill="#475569">Report a detected discrepancy</text>
+<rect x="360" y="502" width="720" height="132" rx="16" fill="#e2e8f0"/>
+<text x="720" y="544" text-anchor="middle" font-size="25" font-weight="700">Investigate before correcting</text>
+<text x="720" y="579" text-anchor="middle" font-size="19" fill="#475569">Compare the relevant source record, version,</text>
+<text x="720" y="606" text-anchor="middle" font-size="19" fill="#475569">business meaning, and effective time.</text>
+<path d="M720 634 V670 H384 V710 M720 670 H1056 V710" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="72" y="724" width="624" height="221" rx="16" fill="white" stroke="#cbd5e1"/>
+<path d="M96 725 H672" stroke="#d97706" stroke-width="4"/>
+<text x="100" y="765" font-size="15" font-weight="700" fill="#92400e" letter-spacing="1">SOURCE FACT IS WRONG</text>
+<text x="100" y="806" font-size="25" font-weight="700">Correct through the authoritative owner</text>
+<text x="100" y="847" font-size="19" fill="#475569">Authorize and audit the business correction.</text>
+<text x="100" y="876" font-size="19" fill="#475569">Propagate it; consumers update their views and</text>
+<text x="100" y="905" font-size="19" fill="#475569">reconsider derived results under their contracts.</text>
+<rect x="744" y="724" width="624" height="221" rx="16" fill="white" stroke="#cbd5e1"/>
+<path d="M768 725 H1344" stroke="#0d9488" stroke-width="4"/>
+<text x="772" y="765" font-size="15" font-weight="700" fill="#0f766e" letter-spacing="1">PROJECTION IS WRONG OR BEHIND</text>
+<text x="772" y="806" font-size="25" font-weight="700">Repair through the consumer</text>
+<text x="772" y="847" font-size="19" fill="#475569">Fix transformation defects or recover missing updates.</text>
+<text x="772" y="876" font-size="19" fill="#475569">Replay, rebuild, or reconcile as appropriate.</text>
+<text x="772" y="905" font-size="19" fill="#475569">Verify the repaired representation against its contract.</text>
+<text x="720" y="982" text-anchor="middle" font-size="18" fill="#64748b">Different meanings or timeframes may legitimately differ. Clarify the contract before overwriting data.</text>
+<rect x="72" y="1013" width="1296" height="77" rx="16" fill="#0f172a"/>
+<text x="720" y="1060" text-anchor="middle" font-size="25" font-weight="700" fill="white">Distribute information. Keep authority and correction responsibilities explicit.</text>
+</g></svg>
