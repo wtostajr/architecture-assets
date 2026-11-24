@@ -51,6 +51,10 @@ Orchestration and workflow engines can coordinate activities without assuming au
 
 Versioning, temporal modeling, and decision traceability should allow business systems to evolve while preserving historical explainability.
 
+### Architectural intent backed by evidence
+
+Architectural quality should be evaluated through explicit fitness criteria and observable evidence, ensuring that the system continues to deliver its intended properties as it evolves.
+
 ### AI with explicit accountability
 
 AI agents and models can provide intelligence and execute authorized tasks, but their participation must respect business authority, policies, and control boundaries.
@@ -75,6 +79,7 @@ The repository supports a growing collection of public GitHub Gists.
 | When Is a Retry Actually Safe? | How can repeated attempts preserve one intended business effect? |
 | When Is Eventual Consistency Acceptable? | When can consumers tolerate stale information without compromising business invariants? |
 | Who Owns the Truth When Data Is Replicated? | Who can authoritatively change a business fact, and how should downstream representations be corrected? |
+| How Do You Know an Architecture Is Working? | How can architectural goals be translated into measurable fitness criteria and validated through observable evidence? |
 
 Each diagram is intended to communicate one architectural distinction clearly.
 
@@ -98,7 +103,8 @@ architecture-assets/
 │   ├── cross-domain-failure-and-recovery.svg
 │   ├── when-is-a-retry-actually-safe.svg
 │   ├── when-is-eventual-consistency-acceptable.svg
-│   └── who-owns-the-truth-when-data-is-replicated.svg
+│   ├── who-owns-the-truth-when-data-is-replicated.svg
+│   └── how-do-you-know-an-architecture-is-working.svg
 └── README.md
 ```
 
@@ -117,6 +123,7 @@ They use a consistent, minimalist visual language to prioritize architectural cl
 - Distributed Recovery and Compensation
 - Consistency Guarantees and Business Invariants
 - Data Authority, Replication, and Reconciliation
+- Architectural Quality, Fitness Functions, and Evolution
 - Temporal Modeling and Rule Versioning
 - AI Agents and Enterprise Systems
 - Business and Technology Alignment

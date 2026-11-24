@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">How Do You Know an Architecture Is Working?</title>
+<desc id="desc">Five architectural goals mapped to fitness criteria and observable evidence. Evaluate each criterion and continue monitoring if satisfied; otherwise correct the implementation, accept an explicit trade-off, or reassess the architecture. Continuously reassess.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#64748b"/></marker></defs>
+<rect width="1200" height="850" rx="12" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172033">
+
+<text x="600" y="48" font-size="32" font-weight="700" text-anchor="middle" fill="#172033">How Do You Know an Architecture Is Working?</text>
+<text x="600" y="78" font-size="19" font-weight="400" text-anchor="middle" fill="#475569">Translate architectural intent into observable evidence.</text>
+<text x="164.0" y="120" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Architectural goal</text>
+<text x="499.0" y="120" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Fitness criterion</text>
+<text x="935.0" y="120" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Observable evidence</text>
+<rect x="44" y="137" width="240" height="62" rx="7" fill="#e8eef5" stroke="#cbd5e1"/>
+<rect x="324" y="137" width="350" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<rect x="714" y="137" width="442" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="164" y="174" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Modularity</text>
+<text x="499.0" y="162" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Changes stay within intended</text>
+<text x="499.0" y="183" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">domain boundaries</text>
+<text x="935.0" y="162" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Dependency violations and</text>
+<text x="935.0" y="183" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">cross-context change patterns</text>
+<path d="M288 168 H318" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M678 168 H708" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="44" y="212" width="240" height="62" rx="7" fill="#e8eef5" stroke="#cbd5e1"/>
+<rect x="324" y="212" width="350" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<rect x="714" y="212" width="442" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="164" y="249" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Deployability</text>
+<text x="499.0" y="237" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Independent, compatible</text>
+<text x="499.0" y="258" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">releases</text>
+<text x="935.0" y="237" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Deployment history and</text>
+<text x="935.0" y="258" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">contract test results</text>
+<path d="M288 243 H318" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M678 243 H708" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="44" y="287" width="240" height="62" rx="7" fill="#e8eef5" stroke="#cbd5e1"/>
+<rect x="324" y="287" width="350" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<rect x="714" y="287" width="442" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="164" y="324" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Resilience</text>
+<text x="499.0" y="312" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Failure containment and</text>
+<text x="499.0" y="333" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">recovery within objectives</text>
+<text x="935.0" y="312" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Fault-injection results, recovery</text>
+<text x="935.0" y="333" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">time and business impact</text>
+<path d="M288 318 H318" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M678 318 H708" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="44" y="362" width="240" height="62" rx="7" fill="#e8eef5" stroke="#cbd5e1"/>
+<rect x="324" y="362" width="350" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<rect x="714" y="362" width="442" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="164" y="399" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Performance</text>
+<text x="499.0" y="387" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Agreed SLOs under</text>
+<text x="499.0" y="408" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">representative workloads</text>
+<text x="935.0" y="387" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Latency, throughput and</text>
+<text x="935.0" y="408" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">resource saturation</text>
+<path d="M288 393 H318" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M678 393 H708" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="44" y="437" width="240" height="62" rx="7" fill="#e8eef5" stroke="#cbd5e1"/>
+<rect x="324" y="437" width="350" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<rect x="714" y="437" width="442" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="164" y="474" font-size="19" font-weight="700" text-anchor="middle" fill="#172033">Evolvability</text>
+<text x="499.0" y="462" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Manageable effort and coordination</text>
+<text x="499.0" y="483" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">for expected changes</text>
+<text x="935.0" y="462" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">Change lead time, affected components</text>
+<text x="935.0" y="483" font-size="16" font-weight="400" text-anchor="middle" fill="#172033">and coordination effort</text>
+<path d="M288 468 H318" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M678 468 H708" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M935 499 V510 H600 V522" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="373" y="526" width="454" height="54" rx="7" fill="#e8eef5" stroke="#94a3b8"/>
+<text x="600" y="559" font-size="20" font-weight="700" text-anchor="middle" fill="#172033">Evaluate each fitness criterion</text>
+<path d="M600 580 V595 H181 V622" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M600 595 H742 V622" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="105" y="615" font-size="15" font-weight="700" text-anchor="middle" fill="#475569">Satisfied</text>
+<text x="834" y="615" font-size="15" font-weight="700" text-anchor="middle" fill="#475569">Deviation identified</text>
+<rect x="44" y="628" width="274" height="62" rx="7" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="181" y="653" font-size="18" font-weight="700" text-anchor="middle" fill="#172033">Continue monitoring</text>
+<text x="181" y="675" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Preserve the property</text>
+<rect x="341" y="628" width="815" height="62" rx="7" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="477" y="653" font-size="18" font-weight="700" text-anchor="middle" fill="#172033">Correct</text>
+<text x="477" y="675" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Implementation</text>
+<text x="748" y="653" font-size="18" font-weight="700" text-anchor="middle" fill="#172033">Accept</text>
+<text x="748" y="675" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Explicit trade-off</text>
+<text x="1020" y="653" font-size="18" font-weight="700" text-anchor="middle" fill="#172033">Reassess</text>
+<text x="1020" y="675" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Architecture or criteria</text>
+<path d="M612 639 V679" fill="none" stroke="#64748b" stroke-width="1.7"/>
+<path d="M884 639 V679" fill="none" stroke="#64748b" stroke-width="1.7"/>
+<path d="M181 690 V709 H748 V690" fill="none" stroke="#64748b" stroke-width="1.7"/>
+<path d="M600 709 V730" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="373" y="735" width="454" height="43" rx="7" fill="#e8eef5" stroke="#94a3b8"/>
+<text x="600" y="762" font-size="18" font-weight="700" text-anchor="middle" fill="#172033">Continuously validate and reassess</text>
+<path d="M827 756 H1176 V94 H600 V99" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="600" y="815" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Illustrative criteria — acceptance thresholds depend on business context and architectural trade-offs.</text>
+</g></svg>
